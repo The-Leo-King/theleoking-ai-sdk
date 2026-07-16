@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "status": "pass",
-  "sourceGitCommit": "76496e73c917b516fef50c3642ecc55d0ad7ff2c",
+  "sourceGitCommit": "293c2c855e7471fb1bae3a4b80637840775e6190",
   "openApiSha256": "d0891369be6b4087ec6aeb24e25235c9dfb524783b6d250695a2511219a3d277",
   "toolchains": {
     "node": "v24.11.1",
