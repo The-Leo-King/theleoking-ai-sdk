@@ -1,0 +1,32 @@
+[project]
+name = "theleoking-ai-api"
+version = "0.1.0a0"
+description = "Python client for The Leo King AI API"
+readme = "README.md"
+license = { text = "Apache-2.0" }
+requires-python = ">=3.9"
+dependencies = [
+  "httpx>=0.27"
+]
+keywords = ["the-leo-king", "astrology-api", "business-intelligence", "sdk"]
+classifiers = [
+  "License :: OSI Approved :: Apache Software License"
+]
+
+[project.urls]
+Homepage = "https://theleokingai.com/api-platform"
+Documentation = "https://theleokingai.com/api-docs"
+OpenAPI = "https://api.theleokingai.com/v1/openapi"
+Source = "https://github.com/The-Leo-King/theleoking-ai-sdk/tree/main/python"
+Support = "https://theleokingai.com/api/v1/support"
+Changelog = "https://theleokingai.com/api/v1/changelog"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+include = ["theleoking_ai_api", "LICENSE"]
+
+[tool.hatch.build.targets.sdist]
+include = ["theleoking_ai_api", "LICENSE", "README.md", "pyproject.toml"]

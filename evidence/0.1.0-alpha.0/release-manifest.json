@@ -1,0 +1,131 @@
+{
+  "schemaVersion": 2,
+  "createdAt": "2026-07-16T09:15:06.952Z",
+  "sourceGitCommit": "76496e73c917b516fef50c3642ecc55d0ad7ff2c",
+  "openApiSha256": "d0891369be6b4087ec6aeb24e25235c9dfb524783b6d250695a2511219a3d277",
+  "releaseChannel": "alpha",
+  "publicationAuthorized": false,
+  "registryPublication": "blocked-pending-approved-public-repository-and-protected-oidc-environments",
+  "packages": {
+    "node": {
+      "name": "@theleoking/ai-api",
+      "version": "0.1.0-alpha.0"
+    },
+    "python": {
+      "name": "theleoking-ai-api",
+      "version": "0.1.0a0"
+    }
+  },
+  "consumerConformance": {
+    "schemaVersion": 1,
+    "status": "pass",
+    "sourceGitCommit": "76496e73c917b516fef50c3642ecc55d0ad7ff2c",
+    "openApiSha256": "d0891369be6b4087ec6aeb24e25235c9dfb524783b6d250695a2511219a3d277",
+    "toolchains": {
+      "node": "v24.11.1",
+      "npm": "11.6.2",
+      "python": "Python 3.14.0",
+      "pip": "pip 25.2 from C:\\Python314\\Lib\\site-packages\\pip (python 3.14)"
+    },
+    "node": {
+      "artifact": "packages/npm/theleoking-ai-api-0.1.0-alpha.0.tgz",
+      "packageName": "@theleoking/ai-api",
+      "version": "0.1.0-alpha.0",
+      "productionBaseUrl": "https://api.theleokingai.com",
+      "sandboxBaseUrl": "https://sandbox.api.theleokingai.com",
+      "helperCount": 42,
+      "webhookVerification": "pass"
+    },
+    "python": {
+      "artifact": "packages/pypi/theleoking_ai_api-0.1.0a0-py3-none-any.whl",
+      "packageName": "theleoking-ai-api",
+      "version": "0.1.0a0",
+      "productionBaseUrl": "https://api.theleokingai.com",
+      "sandboxBaseUrl": "https://sandbox.api.theleokingai.com",
+      "helperCount": 42,
+      "webhookVerification": "pass"
+    }
+  },
+  "files": [
+    {
+      "path": "consumer-conformance.json",
+      "bytes": 1047,
+      "sha256": "3140b0aed6c82cac4664af7ddcb10ecf08cd92bbd1126d9560ede236d063d430"
+    },
+    {
+      "path": "packages/npm/theleoking-ai-api-0.1.0-alpha.0.tgz",
+      "bytes": 11282,
+      "sha256": "b5bc6d9fbedf2d7611a3dd43dbd9616af9a14d8d5708308917acd8fef7719499"
+    },
+    {
+      "path": "packages/pypi/theleoking_ai_api-0.1.0a0-py3-none-any.whl",
+      "bytes": 15236,
+      "sha256": "39a53918f44823febb260094b68dacfcdd8faea4c91e466cc5c0accc9aca791a"
+    },
+    {
+      "path": "packages/pypi/theleoking_ai_api-0.1.0a0.tar.gz",
+      "bytes": 10815,
+      "sha256": "ff6fae628a232ffd7e950ba019ea560ebaa2b3fd5b211b103c72257aefcd12d8"
+    },
+    {
+      "path": "source/node/LICENSE",
+      "bytes": 11525,
+      "sha256": "313605fbac6945e9324d4825470796b5b7dbc012f523fdc181f6e6fd234eb88f"
+    },
+    {
+      "path": "source/node/package.json",
+      "bytes": 1047,
+      "sha256": "e544766b0b703a2625ae05268723f2c2df2ecae30e48eaa469364997ff88a27b"
+    },
+    {
+      "path": "source/node/README.md",
+      "bytes": 4375,
+      "sha256": "f0a16cc7438a62753ff60cd202065635f91382575e0636676324eb765e7900a6"
+    },
+    {
+      "path": "source/node/src/index.ts",
+      "bytes": 22852,
+      "sha256": "fd37031cb8573bb0c146b02f8db703219af4f734d68663482c41e4957d778611"
+    },
+    {
+      "path": "source/node/test/sandbox-configuration.test.mjs",
+      "bytes": 4213,
+      "sha256": "85ba427afb2d7bf0bbb1f854ae30eace7578affdc05d5c14a177fb27f188caf8"
+    },
+    {
+      "path": "source/node/tsconfig.json",
+      "bytes": 252,
+      "sha256": "00114769ee38e1caf95fc6caf2c6670bd089dbb3814f138695e8e5d7bff8e7f9"
+    },
+    {
+      "path": "source/python/LICENSE",
+      "bytes": 11525,
+      "sha256": "313605fbac6945e9324d4825470796b5b7dbc012f523fdc181f6e6fd234eb88f"
+    },
+    {
+      "path": "source/python/pyproject.toml",
+      "bytes": 1025,
+      "sha256": "34111e8dc0266239e222ba7e56014eea822bffbadafd9dc1375f1cb48b897843"
+    },
+    {
+      "path": "source/python/README.md",
+      "bytes": 4265,
+      "sha256": "48dffa1fc23942f6728761fa221cb0bd47981cfacfcc99fd66f0588399873370"
+    },
+    {
+      "path": "source/python/tests/test_sandbox_configuration.py",
+      "bytes": 3314,
+      "sha256": "c021b24bc3943689a64d4b01c78fa23bd64d71fd7949ba853bb97719fb832dcb"
+    },
+    {
+      "path": "source/python/theleoking_ai_api/__init__.py",
+      "bytes": 546,
+      "sha256": "4416cab8453bb487d362b5f9b1121bec7aef40292963362254151d2778d9e3bc"
+    },
+    {
+      "path": "source/python/theleoking_ai_api/client.py",
+      "bytes": 16387,
+      "sha256": "7a5b896e13f06e833ac449f352f338805cb6e789dd9483862dfa73c184878979"
+    }
+  ]
+}

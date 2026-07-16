@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "status": "pass",
+  "sourceGitCommit": "76496e73c917b516fef50c3642ecc55d0ad7ff2c",
+  "openApiSha256": "d0891369be6b4087ec6aeb24e25235c9dfb524783b6d250695a2511219a3d277",
+  "toolchains": {
+    "node": "v24.11.1",
+    "npm": "11.6.2",
+    "python": "Python 3.14.0",
+    "pip": "pip 25.2 from C:\\Python314\\Lib\\site-packages\\pip (python 3.14)"
+  },
+  "node": {
+    "artifact": "packages/npm/theleoking-ai-api-0.1.0-alpha.0.tgz",
+    "packageName": "@theleoking/ai-api",
+    "version": "0.1.0-alpha.0",
+    "productionBaseUrl": "https://api.theleokingai.com",
+    "sandboxBaseUrl": "https://sandbox.api.theleokingai.com",
+    "helperCount": 42,
+    "webhookVerification": "pass"
+  },
+  "python": {
+    "artifact": "packages/pypi/theleoking_ai_api-0.1.0a0-py3-none-any.whl",
+    "packageName": "theleoking-ai-api",
+    "version": "0.1.0a0",
+    "productionBaseUrl": "https://api.theleokingai.com",
+    "sandboxBaseUrl": "https://sandbox.api.theleokingai.com",
+    "helperCount": 42,
+    "webhookVerification": "pass"
+  }
+}

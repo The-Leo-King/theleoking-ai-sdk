@@ -1,0 +1,46 @@
+{
+  "name": "@theleoking/ai-api",
+  "version": "0.1.0-alpha.0",
+  "description": "Node client for The Leo King AI API",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "license": "Apache-2.0",
+  "homepage": "https://theleokingai.com/api-docs",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/The-Leo-King/theleoking-ai-sdk.git",
+    "directory": "node"
+  },
+  "bugs": {
+    "url": "https://theleokingai.com/api/v1/support"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "sideEffects": false,
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "the-leo-king",
+    "astrology-api",
+    "business-intelligence",
+    "sdk"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test test/sandbox-configuration.test.mjs"
+  },
+  "devDependencies": {
+    "typescript": "5.5.3"
+  }
+}
