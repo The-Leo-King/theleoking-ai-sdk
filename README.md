@@ -35,7 +35,8 @@ Registry publishing is performed only by
 [`release.yml`](./.github/workflows/release.yml) on GitHub-hosted runners. Its
 npm and PyPI jobs use separate protected GitHub environments and short-lived
 OIDC trusted-publisher credentials; no long-lived registry write token belongs
-in this repository.
+in this repository. See the exact publisher identities and bootstrap sequence
+in [RELEASING.md](./RELEASING.md).
 
 ## Support
 
