@@ -1,11 +1,12 @@
 {
   "schemaVersion": 2,
-  "createdAt": "2026-07-16T09:15:06.952Z",
-  "sourceGitCommit": "76496e73c917b516fef50c3642ecc55d0ad7ff2c",
+  "createdAt": "2026-07-16T10:01:13.436Z",
+  "sourceGitCommit": "293c2c855e7471fb1bae3a4b80637840775e6190",
   "openApiSha256": "d0891369be6b4087ec6aeb24e25235c9dfb524783b6d250695a2511219a3d277",
   "releaseChannel": "alpha",
+  "publicRepository": "https://github.com/The-Leo-King/theleoking-ai-sdk",
   "publicationAuthorized": false,
-  "registryPublication": "blocked-pending-approved-public-repository-and-protected-oidc-environments",
+  "registryPublication": "blocked-pending-registry-oidc-bindings-and-registry-publication",
   "packages": {
     "node": {
       "name": "@theleoking/ai-api",
@@ -19,7 +20,7 @@
   "consumerConformance": {
     "schemaVersion": 1,
     "status": "pass",
-    "sourceGitCommit": "76496e73c917b516fef50c3642ecc55d0ad7ff2c",
+    "sourceGitCommit": "293c2c855e7471fb1bae3a4b80637840775e6190",
     "openApiSha256": "d0891369be6b4087ec6aeb24e25235c9dfb524783b6d250695a2511219a3d277",
     "toolchains": {
       "node": "v24.11.1",
@@ -50,12 +51,12 @@
     {
       "path": "consumer-conformance.json",
       "bytes": 1047,
-      "sha256": "3140b0aed6c82cac4664af7ddcb10ecf08cd92bbd1126d9560ede236d063d430"
+      "sha256": "18c8567e5844c5b6f634d284a30e3ce5b568183df8000c0449222c444580ccd6"
     },
     {
       "path": "packages/npm/theleoking-ai-api-0.1.0-alpha.0.tgz",
-      "bytes": 11282,
-      "sha256": "b5bc6d9fbedf2d7611a3dd43dbd9616af9a14d8d5708308917acd8fef7719499"
+      "bytes": 11276,
+      "sha256": "56c297e0b9849b479c98721f4d5ea09937e0b1676adf5ad74d11698042dd4630"
     },
     {
       "path": "packages/pypi/theleoking_ai_api-0.1.0a0-py3-none-any.whl",
@@ -64,8 +65,8 @@
     },
     {
       "path": "packages/pypi/theleoking_ai_api-0.1.0a0.tar.gz",
-      "bytes": 10815,
-      "sha256": "ff6fae628a232ffd7e950ba019ea560ebaa2b3fd5b211b103c72257aefcd12d8"
+      "bytes": 10814,
+      "sha256": "93a5c316cc3c0fc19a9d6adef6d8615db905548a7710bc21156911a17bc5d93a"
     },
     {
       "path": "source/node/LICENSE",
@@ -74,8 +75,8 @@
     },
     {
       "path": "source/node/package.json",
-      "bytes": 1047,
-      "sha256": "e544766b0b703a2625ae05268723f2c2df2ecae30e48eaa469364997ff88a27b"
+      "bytes": 1052,
+      "sha256": "f0c1c282c515de7b5c49190d2a258aa1c014423a4782f3da8fbff97acc860c39"
     },
     {
       "path": "source/node/README.md",
@@ -104,8 +105,8 @@
     },
     {
       "path": "source/python/pyproject.toml",
-      "bytes": 1025,
-      "sha256": "34111e8dc0266239e222ba7e56014eea822bffbadafd9dc1375f1cb48b897843"
+      "bytes": 1026,
+      "sha256": "59d9709e8cef5155814f1a80b618f1a851dac9e2489142ade1c5dc5dd02117b4"
     },
     {
       "path": "source/python/README.md",
