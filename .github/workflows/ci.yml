@@ -36,6 +36,9 @@ jobs:
           npm test
           npm pack --dry-run --json
 
+      - name: Test stable handoff validator
+        run: node --test scripts/validate-stable-handoff.test.mjs
+
   python:
     name: Python SDK
     runs-on: ubuntu-latest

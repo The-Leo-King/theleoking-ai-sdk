@@ -28,15 +28,43 @@ the two publication jobs. Both GitHub environments require an explicit review.
 3. In PyPI account publishing settings, create a pending publisher for
    `theleoking-ai-api` using the exact identity above. The first successful
    trusted publish creates the project.
-4. Run `Publish SDK prereleases` from the `main` branch.
+4. Run `Publish SDK packages` from the `main` branch, choose `alpha`, and type
+   the exact confirmation `PUBLISH ALPHA SDK`.
 5. Review and approve the separate `npm` and `pypi` environment deployments.
 6. Verify the public package pages, versions, source links, license, and
    provenance before recording the registry attestations in the application
    release audit.
 
-The current workflow intentionally accepts only `0.x` alpha versions and
-publishes npm under the `alpha` dist-tag. Removing that guard or publishing a
-stable `1.0.0` requires the enterprise release gates to be complete first.
+Alpha publication accepts only `0.x` alpha versions and publishes npm under the
+`alpha` dist-tag. Stable publication is a separate branch of the same protected
+workflow and requires the exact confirmation `PUBLISH STABLE SDK`, matching
+non-prerelease Node/Python versions, and a committed candidate handoff at
+`evidence/<version>/`.
+
+## Stable candidate handoff
+
+Stable packages are never promoted from alpha or rebuilt from unbound source.
+The private application repository first produces a protected stable candidate
+whose `release-manifest.json` is tied to the exact source commit, OpenAPI digest,
+fresh Pro prepublication proof, package identities, and isolated consumer tests.
+
+Copy only these candidate outputs into a reviewed public-repository change:
+
+1. Replace `node/` and `python/` with `sdk-release/source/node/` and
+   `sdk-release/source/python/`.
+2. Add `sdk-release/release-manifest.json` as
+   `evidence/<stable-version>/release-manifest.json`.
+3. Add `sdk-release/consumer-conformance.json` as
+   `evidence/<stable-version>/consumer-conformance.json`.
+4. Open a pull request and require `SDK CI` to pass before merging.
+
+The stable handoff validator rejects untracked or extra SDK files, source hash
+or byte mismatches, missing lockfile evidence, prerelease or divergent package
+versions, wrong repository identity, missing Pro evidence binding, and failed
+consumer conformance. After merge, dispatch `Publish SDK packages`, choose
+`stable`, type `PUBLISH STABLE SDK`, and approve the separate `npm` and `pypi`
+environment deployments. The npm job publishes without a prerelease tag, so a
+successful stable release becomes `latest`.
 
 ## Verification
 
@@ -56,8 +84,9 @@ python -m pip install --pre theleoking-ai-api
 
 Do not delete Git history or reuse a published version.
 
-- npm: deprecate the bad version, publish a corrected patch prerelease, and
-  move the `alpha` dist-tag only after validation.
+- npm: deprecate the bad version and publish a corrected patch. For alpha,
+  move the `alpha` dist-tag only after validation; for stable, never move
+  `latest` backward to an older version.
 - PyPI: yank the bad release from the project page, publish a corrected patch
   prerelease, and document the reason.
 - GitHub: preserve the failed workflow and environment-deployment evidence for

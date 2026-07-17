@@ -35,8 +35,11 @@ Registry publishing is performed only by
 [`release.yml`](./.github/workflows/release.yml) on GitHub-hosted runners. Its
 npm and PyPI jobs use separate protected GitHub environments and short-lived
 OIDC trusted-publisher credentials; no long-lived registry write token belongs
-in this repository. See the exact publisher identities and bootstrap sequence
-in [RELEASING.md](./RELEASING.md).
+in this repository. Stable publication additionally requires a source-complete,
+commit-bound candidate manifest and passing consumer conformance from the
+private Pro release gate; the public workflow verifies every tracked SDK source
+hash before its OIDC jobs can run. See the exact publisher identities, handoff,
+and bootstrap sequence in [RELEASING.md](./RELEASING.md).
 
 ## Support
 
